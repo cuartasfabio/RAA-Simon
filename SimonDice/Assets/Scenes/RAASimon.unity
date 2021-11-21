@@ -3011,7 +3011,7 @@ GameObject:
   - component: {fileID: 493558272}
   - component: {fileID: 493558273}
   m_Layer: 0
-  m_Name: AreaLight
+  m_Name: LuzSimon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6249,6 +6249,7 @@ MonoBehaviour:
   audioSource: {fileID: 315475351}
   audioClip1: {fileID: 8300000, guid: 3235c9819c2e87a47b499a7c0a1a88e4, type: 3}
   pantallazo: {fileID: 755500045}
+  luzSimon: {fileID: 493558273}
 --- !u!114 &907292812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14824,7 +14825,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2533764889277906508}
   m_Layer: 0
-  m_Name: DefaultRoom
+  m_Name: SalaInicial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14840,7 +14841,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2533764890451483220}
   m_Layer: 0
-  m_Name: DefaultRoom (2)
+  m_Name: SalaSimon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

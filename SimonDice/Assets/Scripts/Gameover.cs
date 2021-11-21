@@ -10,6 +10,7 @@ public class Gameover : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip audioClip1;
     public Canvas pantallazo;
+    public Light luzSimon;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +28,8 @@ public class Gameover : MonoBehaviour
     }
 
     IEnumerator MuereYResucita() {
+        // Luz simon en rojo
+        luzSimon.color = Color.red;
         // Sonido disparo
         audioSource.PlayOneShot(audioClip1, 0.5F);
         // Delay de 3 segundos
@@ -37,6 +40,8 @@ public class Gameover : MonoBehaviour
         yield return new WaitForSeconds(2.5f); 
         // Reiniciar escena y mover PJ al principio de la sala
         CheckpointPJ();
+        // Reset a luz simon
+        luzSimon.color = Color.cyan;
         // Rehabilitar trigger juego
         pantallazo.gameObject.SetActive(false);
     }
